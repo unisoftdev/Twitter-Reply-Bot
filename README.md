@@ -17,7 +17,7 @@ To run 24/7 and spend another time in a research, you need 3-7 people working 8-
 On the bottom (regex): https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/twitter_customer_reply_bot.py
 
 
-# Dependencies: 
+### Dependencies: 
 1. Python 3.
 3. libraries, install: 
     ### pip install sqlite3 tweepy json datetime time random json itertools random string datetime
