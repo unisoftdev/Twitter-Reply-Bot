@@ -3,7 +3,7 @@ Twitter Reply Bot discovers customers and people searching for a help and this i
 Very affordably, cheap, I am the author (programmer) and of course, the first one who can set up it for you, on demand and customized.
 
 ### What is the deal?
-To run 24/7 and spend another time in a research, you need 3-7 people working 8-12 hours a day (they don't work 7 days a week and 24 hours a day, you need 3 per day). If you live in an expensiver country like the UK, it would costs you £80.000+ per year.
+To run 24/7 and spend another time in a research, you need 3-7 people working 8-12 hours a day (they don't work 7 days a week and 24 hours a day, you need 3 human workers per day). If you live in an expensiver country like the UK, it would costs you £80.000+ per year. Can you get the work power of 7 people for free? For a small set up fee... (to compare with other programmers, I'm amazingly cheap).
 
 ![alt text](https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/images/visual_studio.png)
 ![alt text](https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/images/twitter.png)
