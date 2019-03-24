@@ -3,7 +3,7 @@ Twitter Reply Bot discovers customers and people searching for a help and this i
 Very affordably, cheap, I am the author (programmer) and of course, the first one who can set up it for you, on demand and customized.
 
 ### What is the deal?
-To run 24/7 and spend another time in a research, you need 4-6 people (they don't work 7 days a week and 24 hours a day, you need 3 human workers per day and others to cover holidays, and sick leave). If you live in an expensiver country like the UK, it would costs you £80.000+ per year. Can you get the work power of 6 people for free? For a small set up fee... (to compare with other programmers, I'm amazingly cheap and one can think that I know what do because I wrote each one line of the code). Feel free to contact me, any consultation is for free and only programming work is charged.
+To run 24/7 and spend another time in a research, you need 4-6 people (they don't work 7 days a week and 24 hours a day, you need 3 human workers per day and others to cover holidays, and sick leave). If you live in an expensiver country like the UK, it would costs you £80.000+ per year. Can you get the work power of 6 people for free? For a small set up fee... (to compare with other programmers, I'm amazingly cheap and one can think that I know what I do because I wrote each one line of the code, code which obviously works). Feel free to contact me, any consultation is for free and only programming work is charged.
 
 ![alt text](https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/images/visual_studio.png)
 ![alt text](https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/images/twitter.png)
