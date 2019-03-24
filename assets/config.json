@@ -1,0 +1,21 @@
+{
+    "auth":
+    {
+        "screen_name": "your screen name (the name, except @)",
+        "CONSUMER_KEY": "you key will be here",
+        "CONSUMER_SECRET": "your secret will be here",
+        "ACCESS_TOKEN": "your access token will be here",
+        "ACCESS_SECRET": "your access secret will be here"
+    },
+
+    "lang": "en",
+
+    "results_search": 20,
+
+
+    "keywords_questions": ["developer", "looking for a skilled Web Developer based in London", "I am a small business owner", "help scrapping python", "how to find a web developer", "#Remote junior web developer", "Web developer wanted", "Full time web developer wanted", "Part time web developer wanted", "Remote web developer wanted", "Web Developer wanted for remote position"],
+
+    "negative_keywords": ["porn", "police", "sex", "fun", "fan", "follow"],
+	
+    "whitelisted_accounts": ["Unisoftdev1"]
+}
