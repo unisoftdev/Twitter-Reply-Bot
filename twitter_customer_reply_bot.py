@@ -126,7 +126,7 @@ def twitterbot_loads_tweets():
     # 9 times increases the probability of a match
     exchangable_verbs = ["want", "wanna", "need", "look", "search", "discover", "seek", "wish", "desire"]
     for need_verbs in exchangable_verbs:
-        message = message.replace(need_verbs, "@need")
+        message = message.replace(need_verbs, "@verb")
         
     # 8 x 9 = 72 times increases the probability of a match if both are used
     exchangable_questions = ["how", "what", "what", "is there", "are there", "does", "where", "is this"]
@@ -158,7 +158,7 @@ def twitterbot_loads_tweets():
         global starting_point
         the_current_day = str(date.today()) 
         twitter_user_name = user_name
-        if re.match(r'(.*)I @need a( remote | )@nouns(.*)', message): ### <-------- change regular expressions, pattern matching
+        if re.match(r'(.*)I @verb a( remote | )@nouns(.*)', message): ### <-------- change regular expressions, pattern matching
             import variables
             if starting_point < 2:
                 day(the_current_day, daily_limit)
