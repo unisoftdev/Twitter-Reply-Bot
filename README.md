@@ -1,5 +1,5 @@
 ### Twitter Reply Bot (explorer) runs 24/7
-Twitter Reply Bot discovers customers and people searching for a help and this is the free version. 
+Twitter Reply Bot with a database which discovers customers (they don't have to make any prior contact) and people searching for a help. This is the free version. 
 Very affordably, cheap, I am the author (programmer) and of course, the first one who can set up it for you, on demand and customized.
 
 ### What is the deal?
