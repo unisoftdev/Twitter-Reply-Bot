@@ -123,15 +123,17 @@ def twitterbot_loads_tweets():
     tweetID = convert_message['tweetID']
     user_name = convert_message['user_name']
 
-    
-    exchangable_verbs = ["want", "wanna", "need", "look", "search", "inspect", "discover", "seek", "wish", "desire"]
+    # 9 times increases the probability of a match
+    exchangable_verbs = ["want", "wanna", "need", "look", "search", "discover", "seek", "wish", "desire"]
     for need_verbs in exchangable_verbs:
         message = message.replace(need_verbs, "@need")
-    
+        
+    # 8 x 9 = 72 times increases the probability of a match if both are used
     exchangable_questions = ["how", "what", "what", "is there", "are there", "does", "where", "is this"]
     for how in exchangable_questions:
         message = message.replace(how, "@question")
-
+        
+    # 15 x 8 x 9 = 1080 times increases the probability of a match if all 3 are used
     exchangable_nouns = ["php developer", "python developer", "django developer", "web developer", "webdeveloper", "anyone", "freelancer", "freelance", "sysadmin", "web-developer", "web developer", "developer", "designer", "php programmer", "php coder"]
     for who in exchangable_nouns:
         message = message.replace(who, "@nouns")   
@@ -154,9 +156,9 @@ def twitterbot_loads_tweets():
     if user_name not in contacted_users:
         global daily_limit
         global starting_point
-        the_current_day = str(date.today()) #I need a( remote | )web developer
+        the_current_day = str(date.today()) 
         twitter_user_name = user_name
-        if re.match(r'(.*)year(.*)', message): ### <-------- change regular expressions, pattern matching
+        if re.match(r'(.*)I @need a( remote | )@nouns(.*)', message): ### <-------- change regular expressions, pattern matching
             import variables
             if starting_point < 2:
                 day(the_current_day, daily_limit)
@@ -166,7 +168,7 @@ def twitterbot_loads_tweets():
                     variables.unisoftdev_new_tweet = 0
                     print('tweet sent')
                     add_contact(user_name)
-                    api.update_status('@'+str(user_name)+' '+greetings+', '+first_answer, tweetID)
+                    api.update_status('@'+str(user_name)+' '+greetings+first_answer, tweetID)
                     random_break_time()
             else:
                 print(variables.sql_daily_limit)
@@ -183,7 +185,7 @@ def twitterbot_loads_tweets():
                     variables.unisoftdev_new_tweet = 0
                     print('tweet sent')
                     add_contact(user_name)
-                    api.update_status('@'+str(user_name)+' '+greetings+', '+second_answer, tweetID)
+                    api.update_status('@'+str(user_name)+' '+greetings+second_answer, tweetID)
                     random_break_time()
             else:
                 restart()
@@ -198,7 +200,7 @@ def twitterbot_loads_tweets():
                     variables.unisoftdev_new_tweet = 0
                     print('tweet sent')
                     add_contact(user_name)
-                    api.update_status('@'+str(user_name)+' '+greetings+', '+third_answer, tweetID)
+                    api.update_status('@'+str(user_name)+' '+greetings+third_answer, tweetID)
                     random_break_time()
             else:
                 restart()
