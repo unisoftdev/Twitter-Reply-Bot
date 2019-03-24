@@ -9,18 +9,18 @@ To run 24/7 and spend another time in a research, you need 3-7 people working 8-
 ![alt text](https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/images/twitter.png)
 ![alt text](https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/images/tweet.png)
 
-### Change the configuration file:
+# Change the configuration file:
  assets --> config.json --> websites
  Change the urls in this file: https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/assets/config.json
 
-### Add more blocks and customize answers:
+# Add more blocks and customize answers:
 On the bottom (regex): https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/twitter_customer_reply_bot.py
 
 
-### Dependencies: 
+# Dependencies: 
 1. Python 3.
 3. libraries, install: 
-    # pip install sqlite3 tweepy json datetime time random json itertools random string datetime
+    ### pip install sqlite3 tweepy json datetime time random json itertools random string datetime
 
 
 ### For a premium version with GUI and many more functionalities (also on demand):
