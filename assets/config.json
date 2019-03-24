@@ -17,5 +17,5 @@
 
     "negative_keywords": ["porn", "police", "sex", "fun", "fan", "follow"],
 	
-    "whitelisted_accounts": ["Unisoftdev1"]
+    "whitelisted_accounts": ["your account - the name without @, e.g. in this form: unisoftdev1 delivered from @unisoftdev1"]
 }
