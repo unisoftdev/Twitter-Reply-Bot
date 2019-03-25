@@ -210,7 +210,7 @@ def twitterbot_loads_tweets():
 def start():
     global count
     global starting_point
-    for i in config_data["keywords_questions"]:
+    for i in config_data["keyword_queries"]:
         global keywords_balance
         keywords_balance =+ 1
         if starting_point > 0:
