@@ -223,16 +223,17 @@ def start():
                 search_results = api.search( q=i, result_type='recent', count=90, since=str(date.today()))
                 print('loading \'{}\''.format(i))
                 for tweet in search_results:
-                    sleep(2)
-                    tweetID = '"' + str(tweet.id) + '"'
-                    user_name = '"' + str(tweet.user.screen_name) + '"'
-                    text = '"' + tweet.text + '"' 
-                    exchangable_characteds = ["<", ">", "=", "$", "__", "%", "*", "&", "~", "select", "remove", "del", "exec", "append", "create", "insert"]                   
-                    for bad_variable in exchangable_characteds:
-                        user_name = user_name.replace(bad_variable, "replaced_term_or_characted")
-                    for bad_variable in exchangable_characteds:
-                        text = text.replace(bad_variable, "replaced")
-                    tweet_dict = {"tweetID": tweetID, "user_name": user_name, "text": text}                    
+                    if not tweet.retweeted:
+                        sleep(2)
+                        tweetID = '"' + str(tweet.id) + '"'
+                        user_name = '"' + str(tweet.user.screen_name) + '"'
+                        text = '"' + tweet.text + '"' 
+                        exchangable_characteds = ["<", ">", "=", "$", "__", "%", "*", "&", "~", "select", "remove", "del", "exec", "append", "create", "insert"]                   
+                        for bad_variable in exchangable_characteds:
+                            user_name = user_name.replace(bad_variable, "replaced_term_or_characted")
+                        for bad_variable in exchangable_characteds:
+                            text = text.replace(bad_variable, "replaced")
+                    tweet_dict = {"tweetID": tweetID, "user_name": user_name, "text": text}                   
                     global ndata
                     ndata = tweet_dict
                     for negative_keywords in config_data["negative_keywords"]:
