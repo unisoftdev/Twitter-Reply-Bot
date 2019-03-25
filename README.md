@@ -17,8 +17,7 @@ https://developer.twitter.com/en/docs/basics/rate-limits
 ### Register your app (to get a permission) and get the access info ( you copy and paste it into config.json):
 https://developer.twitter.com/en/apps/create
 
-### Change the configuration file:
- assets --> config.json --> websites
+### Change config.json, the configuration file:
  Change the urls in this file: https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/assets/config.json
 
 ### Add more blocks and customize answers:
