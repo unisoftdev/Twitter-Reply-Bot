@@ -8,6 +8,15 @@ To run 24/7 and spend another time in research, you need 4-6 people (they don't 
 ![alt text](https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/images/twitter.png)
 ![alt text](https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/images/tweet.png)
 
+### Twitter automotion rules: 
+https://help.twitter.com/en/rules-and-policies/twitter-automation
+
+### Twitter rate limits:
+https://developer.twitter.com/en/docs/basics/rate-limits
+
+### Register your app (to get a permission) and get the access info ( you copy and paste it into config.json):
+https://developer.twitter.com/en/apps/create
+
 ### Change the configuration file:
  assets --> config.json --> websites
  Change the urls in this file: https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/assets/config.json
