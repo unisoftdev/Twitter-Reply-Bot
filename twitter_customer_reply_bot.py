@@ -124,7 +124,8 @@ def twitterbot_loads_tweets():
     user_name = convert_message['user_name']
 
     ##################################################################################################################################
-    # Variations... Some people think they can win in Lotto and easily. I don't think it's a big chance, so I let you implement regex:
+    # Variations... Some people think they can win in Lotto (and easily). 
+    # I don't think it's a big chance, so I let you use the regex:
     ##################################################################################################################################
     
     # 9 times increases the probability of a match
