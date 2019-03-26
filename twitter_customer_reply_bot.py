@@ -123,10 +123,12 @@ def twitterbot_loads_tweets():
     tweetID = convert_message['tweetID']
     user_name = convert_message['user_name']
 
-    ##################################################################################################################################
+    ############################################################################
     # Variations... Some people think they can win in Lotto (and easily). 
-    # I don't think it's a big chance, so I let you use the regex:
-    ##################################################################################################################################
+    # For example, the same meaning can be expressed like: 
+    # "I search for a developer", "I try to find a programmer", "I look for a coder", etc.
+    # I don't think it's a big chance with many possible variations, so I let you use the regex (what NLP is based on):
+    ############################################################################
     
     # 9 times increases the probability of a match
     exchangable_verbs = ["want", "wanna", "need", "look", "search", "discover", "seek", "wish", "desire"]
