@@ -123,15 +123,19 @@ def twitterbot_loads_tweets():
     tweetID = convert_message['tweetID']
     user_name = convert_message['user_name']
 
+    ##################################################################################################################################
+    # Variations... Some people think they can win in Lotto and easily. I don't think it's a big chance, so I let you implement regex:
+    ##################################################################################################################################
+    
     # 9 times increases the probability of a match
     exchangable_verbs = ["want", "wanna", "need", "look", "search", "discover", "seek", "wish", "desire"]
     for need_verbs in exchangable_verbs:
-        message = message.replace(need_verbs, "@verb")
+        message = message.replace(need_verbs, "@verbs")
         
     # 8 x 9 = 72 times increases the probability of a match if both are used
     exchangable_questions = ["how", "what", "what", "is there", "are there", "does", "where", "is this"]
     for how in exchangable_questions:
-        message = message.replace(how, "@question")
+        message = message.replace(how, "@questions")
         
     # 15 x 8 x 9 = 1080 times increases the probability of a match if all 3 are used
     exchangable_nouns = ["php developer", "python developer", "django developer", "web developer", "webdeveloper", "anyone", "freelancer", "freelance", "sysadmin", "web-developer", "web developer", "developer", "designer", "php programmer", "php coder"]
@@ -158,7 +162,7 @@ def twitterbot_loads_tweets():
         global starting_point
         the_current_day = str(date.today()) 
         twitter_user_name = user_name
-        if re.match(r'(.*)I @verb a( remote | )@nouns(.*)', message): ### <-------- change regular expressions, pattern matching
+        if re.match(r'(.*)I @verbs a( remote | )@nouns(.*)', message): ### <-------- change regular expressions, pattern matching
             import variables
             if starting_point < 2:
                 day(the_current_day, daily_limit)
