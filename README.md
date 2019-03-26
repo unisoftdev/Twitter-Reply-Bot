@@ -23,8 +23,9 @@ https://developer.twitter.com/en/apps/create
 ### Add more blocks and customize answers:
 On the bottom (regex): https://github.com/unisoftdev/Twitter-Reply-Bot/blob/master/twitter_customer_reply_bot.py
 
-### nohup command:
+### nohup (a shell command):
 https://en.wikipedia.org/wiki/Nohup
+https://www.ibm.com/support/knowledgecenter/en/ssw_aix_71/com.ibm.aix.cmds4/nohup.htm
 
 ### Dependencies: 
 1. Python 3.
