@@ -120,7 +120,7 @@ def twitterbot_loads_tweets():
     global daily_limit
     convert_message = ndata
     message = convert_message['text']
-    tweetID = convert_message['tweetID']
+    tweetID = convert_message['tweetID'].replace('"', '')
     user_name = convert_message['user_name']
 
     ############################################################################
