@@ -224,7 +224,7 @@ def start():
             sleep(60)
             starting_point =+ 1
         plusone = count + 1       
-        while plusone < keywords_size and daily_limit > len(contacted_users):
+        if plusone < keywords_size and daily_limit > len(contacted_users):
             count =+ 1
             try:
                 search_results = api.search( q=i, result_type='recent', count=90, since=str(date.today()))
